@@ -1,24 +1,10 @@
-# README
+# Movie App
+## Built with Rails, Devise, RSpec, FactoryGirl
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To view API responses, run the server using `rails s`, and then use Postman or cURL!
 
-Things you may want to cover:
+```
+$ curl -v http://localhost:3000/films/2
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+{"films":[{"id":2,"title":"Awesome Movie","description":"So good","url_slug":"foo","year":2018,"average_rating":0.0,"related_film_ids":[]}]}
+```
